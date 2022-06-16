@@ -1,0 +1,580 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	box-sizing: border-box;
+
+}
+/* - - - - - - - - - - * INDEX * - - - - - - - - - - */
+.fondo {
+	background-image: url("img/fondo-entrada.jpg");
+	background-color: #C5E8Ef;	
+}
+
+
+.presentacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 900px;	
+}
+
+.presentacion h1 {
+	padding: 35px 70px;
+	color: #6666AD;
+	font-size: 4em;	
+	margin-top: 0px;
+	border: 2.5pt solid #6666AD;
+	border-radius: 50%;
+}
+	
+.presentacion h2 {
+	padding: 0px;
+	color: #555555;
+	font-size: 2em;	
+	font-weight: 200;
+	padding-bottom: 15px;
+}
+
+.links a {
+	font-variant: normal;	
+}
+
+.links{
+	display: flex;
+	padding: 30pt;
+}
+
+.links a:link, .links a:visited {
+ 	border: 1.5pt solid #6666AD;
+  	border-radius: 50%;
+  	color: #6666AD;
+	padding: 10px 35px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	margin: 0pt 10pt;
+}
+
+.links a:hover, .links a:active {
+  background-color: #6666AD;
+  color: #C5E8Ef
+}
+
+	
+/* - - - - - - - - - - * HEADER * - - - - - - - - - - */
+head, body {
+	background-color: #C5E8Ef;
+}
+.logo{
+	cursor: pointer;
+}
+
+header li, a {
+	font-family: "Chivo", "sans-serif";
+	font-size: 1.1em;
+	font-weight:700;
+	font-variant: small-caps;
+	word-spacing: 5px;
+	color: #D3E4F6;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+
+header a:hover {	
+	color: #749ED1;
+} 
+
+
+header {
+	background-color: #6666AD;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10%;
+}
+
+/* - - - - - - - - - - * BODY * - - - - - - - - - - */
+.detalle {
+  width: 100%;
+  height: 10px;
+  background-color: #6666AD;
+  animation-name: example;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color: #6666AD;}
+  25%  {background-color: #749ED1;}
+  50%  {background-color: #B3DCD6;}
+  100% {background-color: #749ED1;}
+}
+
+
+.banner {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.banner img { 
+		margin-top: 70px;
+}
+
+h1 {
+	font-family: "Bitter", "seriff";
+	font-weight: 700;
+	font-size: 3.3em;
+	color: #749ED1;
+	margin-top:200px;
+	padding-left: 40px;
+	
+}
+
+h2{
+	font-family: "Bitter", "serif";
+	font-weight: 700;
+	font-size: 1.3em;
+	color: #749ED1;	
+}
+
+h3{
+	font-family: "Bitter", "serif";
+	font-weight: 700;
+	font-size: 1em;
+	color: #8484C1;	
+}
+
+h4{
+	font-family: "Chivo", "sans-serif";
+	font-weight: 700;
+	font-size: 0.9em;
+	color: #3C3C3B;	
+}
+
+p{
+	font-family: "Chivo", "sans-serif";
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #3C3C3B;	
+}
+
+li{
+	font-family: "Chivo", "sans-serif";
+	font-weight: 700;
+	font-size: 0.9em;
+	color: #3C3C3B;	
+}
+
+/* - - - - - - - - - - * INFORMACION * - - - - - - - - - - */
+
+.datos {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	padding: 60px;
+	background-color:#C5E8EF;
+	justify-content: center;	
+	
+}
+
+.informacion {
+	display: flex;
+	flex-direction: column;
+	background-color: #B3DCD6;
+	width: 280px;
+	height: 520px;
+	border-radius: 50px;
+	align-items: center;
+	
+}
+
+.contacto {
+    margin-top: 50px;
+}
+
+.general {
+    margin-top: 40px;
+}
+
+.habilidades {
+    margin-top: 40px;
+}
+
+
+/* - - - - - - - - - - * TRAYECTORIA * - - - - - - - - - - */
+
+.trayectoria {
+	background-color: #C5E8EF;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	width: 846px;
+	padding-top: 40px;
+	padding-left: 50px;
+}
+
+.sobremi {
+	margin-top: 40px;
+	max-width: 500px;
+}
+
+.experiencia {
+    margin-top: 30px;
+}
+
+.formacion {
+	margin-top: 40px;
+}
+
+/* - - - - - - - - - - * FOOTER * - - - - - - - - - - */
+
+footer {
+	background-color: #6666AD;
+	width: 100%;
+	height: 65px;
+	font-family: "Chivo", "sans-serif";
+	font-size: 1em;
+	font-weight:700;
+	font-variant: small-caps;
+	word-spacing: 5px;
+	color: #D3E4F6;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between; 
+	
+}
+
+footer a {
+	text-decoration: none;
+	color: #D3E4F6;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+footer h5 {
+	font-size: 1.1em;
+	padding-top: 10px;	
+}
+
+/* - - - - - - - - - - * editorial * - - - - - - - - - - */
+
+.contenedor-slide{
+	display: flex;
+	align-content: center;
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
+	margin-top:60px;
+	margin-bottom: 60px;
+}
+
+.slide-img{
+	display: none;
+}
+
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: #C5E8Ef;
+	font-weight: 700;
+	font-size: 2em;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	
+}
+
+.text{
+	font-family: "Chivo", "sans-seriff";
+	background-color: #D3E4F6;
+	color: #6666AD;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 8px 1px;
+	opacity: .5;
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.text:hover {	
+	color: #D3E4F6;
+	background-color: #6666AD;
+	opacity: 1;
+	
+} 
+
+.fade{
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+
+@keyframes fade{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+/* - - - - - - - - - - * CONTACTO * - - - - - - - - - - */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 70px - 65px);
+}
+
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: 774px;
+}
+
+.contacto-text{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.contacto-form{
+	width: 25%;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+
+label {
+	font-family: "Chivo", sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #3C3C3B;
+	margin: 20px 0px 8px 0px;
+}
+
+input {
+	width:250px;
+	height: 30px;
+	background-color: #00000;
+	font-family: "Chivo", sans-serif;
+	border-radius: 15px; 
+	padding: 4px 0px 4px 10px;
+	border: none;	
+}
+
+textarea {
+	font-family: "Chivo", sans-serif;
+	border-radius: 5px;
+	height: 100px;
+	width: 300px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border: none;
+		
+}
+
+.enviar{
+	margin-top: 25px;
+	width: 100px;
+	font-family: "Chivo", sans-serif;
+	font-weight: 700;
+	color: #6666AD;
+	background-color: white;
+}
+
+.enviar:hover {
+	color: white;
+	background-color: #6666AD;
+	
+}
+/*-------------- MEDIA ----------------*/
+
+@media screen and  (max-width:600px) {
+
+/*--------------- INDEX --------------*/	
+	
+.presentacion h1 {
+	padding: 30px 40px;
+	color: #6666AD;
+	font-size: 2.5em;
+	}
+	
+.links a:link, .links a:visited {
+	padding: 10px 25px;
+	margin: 0pt 5pt;
+}
+	
+/*-------------- HEADER -------------*/
+		
+header {	
+	justify-content: center;
+	padding: 10px 0px;
+}
+	
+header li, a {
+	font-size: 1em;
+	padding: 5px;	
+}
+	
+.logo{
+	width: 200px;
+	height: auto;
+	margin-right: 20px;
+}	
+
+/*---------------SOBREMI--------------*/	
+	
+h1 {
+	font-size: 3em;
+	margin-top:100px;
+	padding-left: 50px;
+	}
+	
+.banner img { 
+	margin-top: 50px;
+	margin-left: 50px;
+	max-height: 200px;
+	max-width: 200px;
+	
+}
+
+h2 {
+	font-size: 1.1em;
+	}
+	
+.datos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+	padding: 0px;
+		
+	
+}
+
+.informacion {
+	width: 50%;
+	height: 430px;
+	border-radius: 50px;	
+}
+
+.contacto {
+    margin-top: 35px;
+}
+
+.general {
+    margin-top: 20px;
+}
+
+.habilidades {
+    margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.trayectoria {
+	display: flex;
+	height: 100%;
+	width: 80%;
+	align-content: center;
+}
+
+.sobremi {
+	margin-top: 20px;
+}
+
+.experiencia {
+	margin-bottom: 40px;
+}
+	
+/*--------------- EDITORIAL ----------------*/
+
+.contenedor-slide{
+	max-width: 500px;
+}
+
+.slide-img img{
+	max-width: 500px;
+}
+
+.text{
+	
+	font-size: 0.9em;
+}
+
+/*------------- CONTACTO -------------*/	
+
+.contacto-text{
+	width: 50%;	
+}
+
+.contacto-text {
+	width: 30%;
+	margin-right: 35px;	
+		
+}
+	
+input {
+	width:220px;
+	height: 25px;	
+}
+
+textarea {
+	height: 150px;
+	width: 220px;		
+}
+	
+/* - - - - - - - - - - * FOOTER * - - - - - - - - - - */
+
+footer {
+	width: 100%;
+	font-size: 0.9em;
+	word-spacing: 3px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between; 
+	
+}
+
+footer a {
+	padding-top:10px;
+	padding-left: 10px;
+}
+
+footer h5 {
+	font-size: 1em;
+	padding-top: 10px;
+	
+}
+footer img {
+	max-height: 35px;
+	max-width: 35px;
+	margin-right: 5px;
+	
+}
+	}
