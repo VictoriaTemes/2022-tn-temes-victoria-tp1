@@ -30,8 +30,15 @@
 	margin-top: 0px;
 	border: 2.5pt solid #6666AD;
 	border-radius: 50%;
+	
 }
 	
+.presentacion h1{
+	-webkit-animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
+}
+
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
 .presentacion h2 {
 	padding: 0px;
 	color: #555555;
@@ -354,10 +361,11 @@ main {
 }
 
 .contacto-text{
-	width: 25%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-right: 50px;
 	
 }
 
@@ -406,6 +414,7 @@ textarea {
 	font-weight: 700;
 	color: #6666AD;
 	background-color: white;
+	padding:4px 0px 4px 0px;
 }
 
 .enviar:hover {
